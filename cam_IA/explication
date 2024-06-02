@@ -1,0 +1,62 @@
+meu_projeto/
+│
+├── meu_ambiente/       # Diretório do ambiente virtual
+│   ├── bin/            # Executáveis do Python (macOS/Linux)
+│   ├── Scripts/        # Executáveis do Python (Windows)
+│   ├── lib/            # Bibliotecas instaladas no ambiente virtual
+│   └── ...             # Outros arquivos do ambiente virtual
+│
+├── script.py           # Seu script Python
+└── requirements.txt    # Arquivo de dependências
+
+
+Criar um Ambiente Virtual:
+
+    No terminal, navegue até o diretório do seu projeto ou onde você deseja criar o ambiente virtual.
+    Execute o comando para criar o ambiente virtual.
+
+
+#    python -m venv meu_ambiente
+
+Isso criará um diretório chamado meu_ambiente contendo os binários do Python e um diretório lib para 
+pacotes instalados.
+
+Ativar o Ambiente Virtual:
+
+    Ative o ambiente virtual para configurar o ambiente de execução do Python para usar o novo ambiente 
+    virtual.
+
+    No Windows:
+
+
+#    meu_ambiente\Scripts\activate
+
+No macOS/Linux:
+
+
+#    source meu_ambiente/bin/activate
+
+Após a ativação, você verá que o prompt do terminal mudou para indicar que o ambiente virtual está ativo 
+(por exemplo, (meu_ambiente)).
+
+Instalar Pacotes:
+
+    Com o ambiente virtual ativo, use o pip para instalar pacotes. O pip está configurado para instalar 
+    pacotes no ambiente virtual, não no sistema global.
+
+
+# pip install requests
+
+Você pode instalar qualquer pacote necessário para o seu projeto dessa maneira.
+
+Trabalhar no Projeto:
+
+    Você pode trabalhar no seu projeto e todos os comandos do Python usarão o ambiente virtual. Por exemplo, 
+    você pode criar e executar scripts Python, e eles usarão os pacotes instalados no ambiente virtual.
+
+Desativar o Ambiente Virtual:
+
+    Quando terminar de trabalhar, você pode desativar o ambiente virtual para voltar ao ambiente Python global.
+
+
+# deactivate
